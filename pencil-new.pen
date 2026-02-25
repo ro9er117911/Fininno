@@ -1,0 +1,899 @@
+{
+  "version": "2.8",
+  "children": [
+    {
+      "type": "frame",
+      "id": "FnPg1",
+      "x": 0,
+      "y": 0,
+      "name": "Project Portal — Main Page",
+      "theme": {
+        "Mode": "Light"
+      },
+      "clip": true,
+      "width": 1440,
+      "height": 1200,
+      "fill": "#f8fafc",
+      "layout": "vertical",
+      "children": [
+        {
+          "type": "frame",
+          "id": "NavB1",
+          "name": "Navbar",
+          "width": "fill_container",
+          "height": 70,
+          "fill": "#ffffff",
+          "stroke": {
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "#0000000D"
+          },
+          "padding": [
+            0,
+            120
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "LogoF",
+              "name": "Logo",
+              "gap": 10,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LogoI",
+                  "name": "LogoIcon",
+                  "width": 32,
+                  "height": 32,
+                  "cornerRadius": 4,
+                  "stroke": {
+                    "align": "center",
+                    "thickness": 2.5,
+                    "join": "round",
+                    "cap": "round",
+                    "fill": "$primary-color"
+                  },
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "LogoL",
+                      "name": "LogoDivider",
+                      "width": 1,
+                      "height": "fill_container",
+                      "fill": "$primary-color"
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "LogoT",
+                  "name": "LogoText",
+                  "fill": "$primary-color",
+                  "content": "Project Portal",
+                  "fontFamily": "Noto Sans TC",
+                  "fontSize": 24,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NavLn",
+              "name": "NavLinks",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NvL01",
+                  "name": "NavLink1",
+                  "fill": "$text-main",
+                  "content": "入口列表",
+                  "fontFamily": "Noto Sans TC",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "NvL02",
+                  "name": "NavLink2",
+                  "fill": "$text-main",
+                  "content": "文檔中心",
+                  "fontFamily": "Noto Sans TC",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "text",
+                  "id": "NvL03",
+                  "name": "NavLink3",
+                  "fill": "$text-main",
+                  "content": "關於平台",
+                  "fontFamily": "Noto Sans TC",
+                  "fontSize": 15,
+                  "fontWeight": "500"
+                },
+                {
+                  "type": "frame",
+                  "id": "NvBtn",
+                  "name": "LoginButton",
+                  "fill": "$primary-color",
+                  "cornerRadius": 8,
+                  "padding": [
+                    8,
+                    19
+                  ],
+                  "justifyContent": "center",
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "NvBtT",
+                      "name": "LoginText",
+                      "fill": "#FFFFFF",
+                      "content": "登入系統",
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 15,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HeroS",
+          "name": "Hero Section",
+          "width": "fill_container",
+          "fill": "#f8fafc",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            90,
+            120,
+            48,
+            120
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "Badge",
+              "name": "HeroBadge",
+              "fill": "#2563eb19",
+              "cornerRadius": 999,
+              "padding": [
+                8,
+                24
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "BdgTx",
+                  "name": "BadgeText",
+                  "fill": "$primary-color",
+                  "content": "2024 版本已更新",
+                  "fontFamily": "Noto Sans TC",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "HroT1",
+              "name": "HeroTitle",
+              "fill": "#0f172a",
+              "content": "集中化管理您的開發流程",
+              "textAlign": "center",
+              "fontFamily": "Noto Sans TC",
+              "fontSize": 56,
+              "fontWeight": "800",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "HroSb",
+              "name": "HeroSubtitle",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 600,
+              "content": "一個為團隊量身打造的入口網站，整合所有核心工具與技術文檔，讓工作更有效率。",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Noto Sans TC",
+              "fontSize": 20,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "SrchC",
+              "name": "SearchContainer",
+              "width": 500,
+              "fill": "#ffffff",
+              "cornerRadius": 12,
+              "stroke": {
+                "thickness": 1,
+                "fill": "$search-border"
+              },
+              "gap": 12,
+              "padding": [
+                16,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "SrchI",
+                  "name": "SearchIcon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "search",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-muted"
+                },
+                {
+                  "type": "text",
+                  "id": "SrchT",
+                  "name": "SearchPlaceholder",
+                  "fill": "$text-muted",
+                  "content": "搜尋功能、工具或入口名稱...",
+                  "fontFamily": "Noto Sans TC",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "GridS",
+          "name": "Portal Grid Section",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            16,
+            120,
+            100,
+            120
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Row01",
+              "name": "CardRow1",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Crd01",
+                  "name": "Card-Dashboard",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#f1f5f9"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ic001",
+                      "name": "CardIcon1",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#f1f5f9",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Icn01",
+                          "name": "Icon1",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "bar-chart-2",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdT01",
+                      "name": "CardTitle1",
+                      "fill": "$text-main",
+                      "content": "數據監控儀表板",
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdD01",
+                      "name": "CardDesc1",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "即時追蹤各項系統指標與專案進度，支援多維度視覺化報表。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CdF01",
+                      "name": "CardFooter1",
+                      "gap": 5,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CfT01",
+                          "name": "FooterText1",
+                          "fill": "$primary-color",
+                          "content": "進入系統",
+                          "fontFamily": "Noto Sans TC",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "CfI01",
+                          "name": "FooterArrow1",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Crd02",
+                  "name": "Card-Docs",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#f1f5f9"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ic002",
+                      "name": "CardIcon2",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#f1f5f9",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Icn02",
+                          "name": "Icon2",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "book-open",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdT02",
+                      "name": "CardTitle2",
+                      "fill": "$text-main",
+                      "content": "文檔庫系統",
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdD02",
+                      "name": "CardDesc2",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "存放開發指南、API 文件與標準作業流程 (SOP)。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CdF02",
+                      "name": "CardFooter2",
+                      "gap": 5,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CfT02",
+                          "name": "FooterText2",
+                          "fill": "$primary-color",
+                          "content": "進入系統",
+                          "fontFamily": "Noto Sans TC",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "CfI02",
+                          "name": "FooterArrow2",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Crd03",
+                  "name": "Card-UIKit",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#f1f5f9"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ic003",
+                      "name": "CardIcon3",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#f1f5f9",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Icn03",
+                          "name": "Icon3",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "layers",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdT03",
+                      "name": "CardTitle3",
+                      "fill": "$text-main",
+                      "content": "UI 元件中心",
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdD03",
+                      "name": "CardDesc3",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "提供符合設計規範的 React 與 Vue 元件預覽與程式碼複製。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CdF03",
+                      "name": "CardFooter3",
+                      "gap": 5,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CfT03",
+                          "name": "FooterText3",
+                          "fill": "$primary-color",
+                          "content": "進入系統",
+                          "fontFamily": "Noto Sans TC",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "CfI03",
+                          "name": "FooterArrow3",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Row02",
+              "name": "CardRow2",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Crd04",
+                  "name": "Card-APITest",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#f1f5f9"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ic004",
+                      "name": "CardIcon4",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#f1f5f9",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Icn04",
+                          "name": "Icon4",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "server",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdT04",
+                      "name": "CardTitle4",
+                      "fill": "$text-main",
+                      "content": "API 自動化測試",
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdD04",
+                      "name": "CardDesc4",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "整合測試環境 API 調用與連通性檢測工具。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CdF04",
+                      "name": "CardFooter4",
+                      "gap": 5,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CfT04",
+                          "name": "FooterText4",
+                          "fill": "$primary-color",
+                          "content": "進入系統",
+                          "fontFamily": "Noto Sans TC",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "CfI04",
+                          "name": "FooterArrow4",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Crd05",
+                  "name": "Card-Deploy",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#f1f5f9"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ic005",
+                      "name": "CardIcon5",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#f1f5f9",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Icn05",
+                          "name": "Icon5",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "cloud",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdT05",
+                      "name": "CardTitle5",
+                      "fill": "$text-main",
+                      "content": "資產部署管理",
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdD05",
+                      "name": "CardDesc5",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "快速切換測試與正式環境，監控部署版本與狀態。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CdF05",
+                      "name": "CardFooter5",
+                      "gap": 5,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CfT05",
+                          "name": "FooterText5",
+                          "fill": "$primary-color",
+                          "content": "進入系統",
+                          "fontFamily": "Noto Sans TC",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "CfI05",
+                          "name": "FooterArrow5",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Crd06",
+                  "name": "Card-Forum",
+                  "width": "fill_container",
+                  "fill": "#ffffff",
+                  "cornerRadius": 20,
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "#f1f5f9"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "Ic006",
+                      "name": "CardIcon6",
+                      "width": 48,
+                      "height": 48,
+                      "fill": "#f1f5f9",
+                      "cornerRadius": 12,
+                      "justifyContent": "center",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "Icn06",
+                          "name": "Icon6",
+                          "width": 24,
+                          "height": 24,
+                          "iconFontName": "message-square",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdT06",
+                      "name": "CardTitle6",
+                      "fill": "$text-main",
+                      "content": "團隊技術討論區",
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 20,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "CdD06",
+                      "name": "CardDesc6",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "內部經驗分享、QA 問答以及最新的技術選型討論。",
+                      "lineHeight": 1.6,
+                      "fontFamily": "Noto Sans TC",
+                      "fontSize": 15,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CdF06",
+                      "name": "CardFooter6",
+                      "gap": 5,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "CfT06",
+                          "name": "FooterText6",
+                          "fill": "$primary-color",
+                          "content": "進入系統",
+                          "fontFamily": "Noto Sans TC",
+                          "fontSize": 14,
+                          "fontWeight": "600"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "CfI06",
+                          "name": "FooterArrow6",
+                          "width": 16,
+                          "height": 16,
+                          "iconFontName": "arrow-right",
+                          "iconFontFamily": "lucide",
+                          "fill": "$primary-color"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "primary-color": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "primary-hover": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "secondary-color": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "bg-color": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "card-bg": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "text-main": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "text-muted": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "navbar-bg": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "border-light": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "card-icon-bg": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "hero-title-color": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "search-border": {
+      "type": "color",
+      "value": "#000000"
+    },
+    "badge-bg": {
+      "type": "color",
+      "value": "#000000"
+    }
+  }
+}
